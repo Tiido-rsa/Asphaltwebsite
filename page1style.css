@@ -1,0 +1,406 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	overflow: hidden;
+	overflow-y: scroll;
+}
+/******************************************************
+ *                   Navigation
+ * ***************************************************/
+ .links a{
+ 	text-shadow: 1px 1px #000;
+ 	text-decoration: none;
+ 	color: white;
+ 	font-size: 1rem;
+ }
+
+ a:hover{
+ 	cursor: pointer;
+ 	z-index: 25;
+ }
+
+.links{
+	margin-top: 0;
+	height: 4.9rem;
+	width: 100vw;
+	display: inline-flex;
+	flex-direction: row;
+	background: none;
+	position: fixed;
+	z-index: 50;
+	font-family: monospace;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+}
+
+.lnk:hover{
+	animation: flare 0.4s ease-in-out;
+	transform: scale(1.1);
+	background: linear-gradient(to right, rgba(135, 4, 4, 1.0), rgba(219, 13, 13, 1.0));
+	transition: all 0.5s ease-in;
+	border-radius: 20px;
+}
+
+.home{
+	margin-right: 3vw;
+	/*padding: 1rem 1rem;*/
+	margin-left: 48rem;
+	border: none;
+	text-align: center;
+	z-index: 20;
+	border-radius: 5px;
+}
+
+.home:hover{
+	animation: flare 0.4s ease-in-out;
+	transform: scale(1.1);
+	background: linear-gradient(to right, rgba(135, 4, 4, 1.0), rgba(219, 13, 13, 1.0));
+	border-radius: 20px;
+	transition: all 0.5s ease-in;
+}
+
+.download{
+	background: linear-gradient(to right, rgba(135, 4, 4, 1.0), rgba(219, 13, 13, 1.0));
+	border-radius: 5px;
+	margin-left: 12rem;
+}
+
+.download:hover{
+	animation: flare 0.6s ease-in-out;
+	transition: all 0.5s ease;
+	transform: scale(1.15);
+}
+
+@keyframes flare{
+	0%{
+		background: linear-gradient(to right, rgba(249, 49, 49, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0));
+		transform: scale(1.1);
+	}
+	14.3%{
+		background: linear-gradient(to right, rgba(135, 4, 4, 1.0), rgba(249, 49, 49, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0));
+		transform: scale(1.15);
+	}
+	28.6%{
+		background: linear-gradient(to right, rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(249, 49, 49, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0));
+		transform: scale(1.20);
+	}
+	42.9%{
+		background: linear-gradient(to right, rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(249, 49, 49, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0));
+		transform: scale(1.25);
+	}
+	57.2%{
+		background: linear-gradient(to right, rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(249, 49, 49, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0));
+		transform: scale(1.30);
+	}
+	71.5%{
+		background: linear-gradient(to right, rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(249, 49, 49, 1.0), rgba(135, 4, 4, 1.0));
+		transform: scale(1.25);
+	}
+	85.4%{
+		background: linear-gradient(to right, rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(249, 49, 49, 1.0), rgba(135, 4, 4, 1.0));
+		transform: scale(1.20);
+	}
+	100%{
+		background: linear-gradient(to right, rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(135, 4, 4, 1.0), rgba(219, 13, 13, 1.0));
+		transform: scale(1.1);
+	}
+}
+
+.links a{
+	list-style: none;
+	text-decoration: none;
+	display: inline-flex;
+	flex-direction: row;
+	margin-left: 15rem;
+	padding: 1rem;
+	margin: 1rem 2rem;
+	z-index: 20;
+	border-radius: 5px;
+}
+
+
+
+/********************************************************
+ *                      HEADER
+ * *****************************************************/
+.headerContain{
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	
+	display: flex;
+}
+
+/*.video{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	object-fit: contain;
+}*/
+
+.grad{
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2));
+	position: absolute;
+	z-index: 5;
+}
+
+.gradMain{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 5;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0));
+}
+
+
+
+/********************************************************
+ *                      MEDIA
+ * *****************************************************/
+.video{
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	transform: translateY(-20%%);
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	object-fit: cover;
+}
+
+.vidcontain{
+	margin: 0;
+	padding: 0;
+	z-index: -1;
+	position: fixed;
+	width: 100%;
+
+}
+
+.logo{
+	z-index: 2;
+	margin-left: 1.5rem;
+	margin-top: 1rem;
+	transform: translateY(14px);
+}
+
+.logo:hover{
+	animation: flare2 0.5s ease-in-out;
+	transition: all 0.3s ease-in;
+	transform: scale(1.15);
+}
+
+.DwnLd{
+	transform: translate(15%, 80%);
+	z-index: 25;
+	padding: 1.5rem;
+	width: 80%;
+	display: inline-flex;
+}
+
+.DwnLd a{
+	padding: 1.5rem;
+	margin: 1rem;
+	width: 25%;
+	height: 10%;
+}
+
+.DwnLd a img{
+	border-radius: 15px;
+}
+
+
+
+@keyframes flare2{
+	0%{
+		transform: scale(1.1);
+	}
+	14.3%{
+		transform: scale(1.15);
+	}
+	28.6%{
+		transform: scale(1.20);
+	}
+	42.9%{
+		transform: scale(1.25);
+	}
+	57.2%{
+		transform: scale(1.30);
+	}
+	71.5%{
+		transform: scale(1.25);
+	}
+	85.4%{
+		transform: scale(1.20);
+	}
+	100%{
+		transform: scale(1.15);
+	}
+}
+
+.logoimage{
+	margin-top: 4rem;
+	margin-left: 2rem;
+	width: 40%;
+	height: 40%;
+	z-index: 3;
+	
+}
+
+@keyframes disappear{
+	0%{
+		transform: scale(0);
+	}
+	5%{
+		transform: scale(0);
+	}
+	8%{
+		transform: scale(0);
+	}
+	10%{
+		transform: scale(1.0);
+	}
+	95%{
+		transform: scale(1.0);
+	}
+	97%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(0);
+	}
+}
+
+.logoimage .imgsrc{
+	width: 100%;
+	height: 100%;
+	animation: disappear 45s infinite ease-out;
+	transform: scale(0.8);
+}
+
+.details{
+	color: #b26767;
+	opacity: 0.5;
+	width: 25vw;
+	height: 50vh;
+	z-index: 8;
+	transform: translateY(20vh);
+	margin: 0;
+	margin-left: 65%;
+	padding: 0.6rem;
+	font-size: 1.5rem;
+	font-family: monospace;
+	text-align: center;
+	font-weight: 300;
+}
+
+.homepage .carousel{
+	transform: translate(-50%, 10vh);
+	height: 60%;
+	width: 50%;
+	z-index: 25;
+	/*position: absolute;
+	opacity: 0;
+	transition: opacity ease-in-out 0.4s;*/
+} 
+
+.homepage .carousel img{
+	width: 100%;
+	height: 100%;
+	border-radius: 100px;
+	transform: translateX(-40%);
+}  
+
+/***************************************************
+                    HOME PAGE
+***************************************************/
+.homepage{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 90vw;
+	height: 60vh;
+	
+	border-radius: 3rem;
+	margin-left: 10rem;
+}      
+
+.homebg{
+	position: absolute;
+
+}
+
+.homepage .text{
+	padding: 1.5rem;
+	height: 100%;
+	width: 50%;
+	z-index: 25;
+	margin-top: 1rem;
+	color: #fff;
+	transform: translateX(-30%);
+	font-size: 1.1rem;
+}  
+
+.homepage .text h3{
+	color: gold;
+	text-shadow: 1px 1.5px #000;
+}
+
+.load{
+	animation: appear 0.2s ease-in-out;
+	max-width: 100vw;
+}         
+
+@keyframes appear{
+	0%{
+		transform: translateX(-100vw);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+
+.f-links{
+	z-index: 110;
+}
+
+.f-links a{
+	margin: 2rem;
+	color: white;
+	font-family: monospace;
+	font-size: 1.2rem;
+	text-decoration: none;
+	font-weight: 350;
+}
+
+.f-links a:hover{
+	font-size: 1.5rem;
+}
+
+.slide{
+	transition: all 0.4s ease-in-out;
+	border-radius: 5px;
+}
+
+.appear{
+	animation: show 0.6s ease-in;
+}
+
+@keyframes show{
+	0%{
+		transform: scale(0);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+/* portfolio/CW FA2/page1Style.css */
+
+/*for demo*/
+

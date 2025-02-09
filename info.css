@@ -1,0 +1,294 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.glass{
+	position: absolute;
+	background: white;
+	height: 80vh;
+	width: 60vw;
+	background: linear-gradient(to right, rgba(135, 135, 135, 0.2), rgba(255, 255, 255, 0.1));
+	border-radius: 2vh;
+	z-index: 2;
+	backdrop-filter: blur(0.3rem);
+	display: grid;
+	grid-template-columns:repeat(2, 1fr);
+	/*scroll-behavior: auto;*/
+	overflow-y: scroll;
+	transform: translate(35%, 15%);
+	z-index: 5;
+	padding: 2rem;
+}
+
+.aboutcontainer{
+	transform: translateY(-100vh);
+	height: 100vh;
+}
+
+/*.aboutpage{
+	display: grid;
+	grid-template-columns:repeat(2, 1fr);
+}*/
+
+.aboutpage .text{
+	padding: 4.5rem;
+	/*transform: translateY(15vh);*/
+	height: 50%;
+	z-index: 25;
+	color: whitesmoke;
+	font-family: cursive;
+	font-size: 1.5rem;
+}  
+
+.aboutpage .text2{
+	padding: 3rem;
+	/*transform: translateY(2vh);*/
+	height: 50%;
+	z-index: 25;
+	color: whitesmoke;
+	font-family: cursive;
+	font-size: 1.5rem;
+} 
+
+.aboutpage .text3{
+	padding: 4rem;
+	/*transform: translateY(-3vh);*/
+	height: 50%;
+	z-index: 25;
+	color: whitesmoke;
+	font-family: cursive;
+	font-size: 1.5rem;
+} 
+
+h4{
+	color: #c69501;
+}
+
+.inf{
+	color: red;
+	font-weight: 700;
+}
+
+strong{
+	color: #0dcbd8;
+}
+
+.svg{
+	z-index: 5;
+	margin-top: 8vh;
+	margin-left: 3vw;
+	width: 6vw;
+	height: 12vh;
+
+}
+
+
+.logoimage2{
+	margin-top: 7rem;
+	margin-left: 1rem;
+	/*width: 40vw;*/
+	height: 10vh;
+	z-index: 3;
+	
+}
+
+.logoimage2 .imgsrc{
+	width: 100%;
+	height: 100%;
+}
+
+.contactUs{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 100vw;
+	height: 100vh;
+	margin-left:0rem;
+	transform: translateY(-100vh);
+	z-index: 2;
+}
+
+.contactUs .Title{
+	position: absolute;
+	z-index: 5;
+	color: whitesmoke;
+	font-size: 7rem;
+	margin-top: 6rem;
+	margin-left: 3rem;
+}
+
+.contactUs .Title span{
+	color: indianred;
+}
+
+.map{
+	z-index: 20;
+	transform: translate(-5vw, 5vh);
+	width: 50vw;
+	height: 60vh;
+	margin-left: 0vw;
+}
+
+.map iframe{
+	width: 80%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.form{
+	z-index: 20;
+	transform: translateY(-35vh);
+	width: 50vw;
+	height: 60vh;
+	margin-left: 10vw;
+	color: white;
+}
+
+.form input{
+	height: 2rem;
+	border-radius: 8px;
+	width: 40%;
+	padding-left: 0.5rem;
+	z-index: 50;
+}
+
+.form textarea{
+	border-radius: 8px;
+	padding: 0.5rem;
+}
+
+button{
+	width: 5rem;
+	height: 1.5rem;
+	border-radius: 12px;
+}
+
+button:hover{
+	background-color: darkgrey;
+	color: white;
+	font-weight: 500;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.Sales{
+	font-size: 2rem;
+	margin-top: 13rem;
+	margin-left: 12vw;
+	color: white;
+	z-index: 25;
+}
+
+
+
+.socials{
+	width: 100vw;
+	height: 25vh;
+	position: relative;
+	background-color: #000;
+	z-index: 50;
+	transform: translateY(-100vh);
+}
+
+.socialshome{
+	width: 100vw;
+	height: 25vh;
+	position: relative;
+	background-color: #000;
+	transform: translateY(35vh);
+	z-index: 50;
+}
+
+.socialsgallery{
+	width: 300vw;
+	height: 25vh;
+	position: relative;
+	background-color: #000;
+	transform: translateX(-100vw);
+	margin-top: 100vh;
+	z-index: 100;
+}
+
+
+.blue{
+	color: lightblue;
+}
+
+.purple{
+	color: purple;
+}
+
+.yellow{
+	color: yellow;
+}
+
+/************************************************
+                    Reviews
+************************************************/
+.Reviews{
+	z-index: 5;
+	color: white;
+	padding: 1rem;
+	margin-left: 1.5rem;
+	width: 30vw;
+	height: 50vh;
+	position: relative;
+	transform: translateY(-10vh);
+}
+
+.Reviews h2{
+	text-align: center;
+	padding: 30px;
+	font-size: 30px;
+	z-index: 50;
+	margin-left: 15rem;
+}
+
+
+
+.contnr{
+	width: 110%;
+	height: 50%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	background: linear-gradient(to right, #3f0000, #6b0000);
+	border-radius: 15px;
+	transform: translate(-20%, -110%);
+}
+
+.user-text{
+	position: absolute;
+	padding: 1rem;
+	width: 75%;
+}
+
+.circle{
+	position: absolute;
+	width: 20%;
+	height: 50%;
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: lightblue;
+	transform: translate(375%, 70%);
+	justify-content: center;
+	text-align: center;
+}
+
+.circle h1{
+	transform: translateY(16%);
+	font-size: 5rem;
+}
+
+.silver{
+	color: silver;
+	transform: translateX(-50vw);
+}
